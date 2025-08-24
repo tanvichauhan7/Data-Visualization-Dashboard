@@ -1,95 +1,105 @@
-/* Basic Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Body Styling */
 body {
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(to bottom right, #2d89ff, #0d47a1);
-  color: white;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #1e90ff, #007bff);
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   min-height: 100vh;
+  padding: 30px;
 }
 
-/* Dashboard Container */
-.dashboard-container {
-  width: 90%;
-  max-width: 1200px;
-  background-color: #ffffff;
-  color: #333;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
+.dashboard {
+  background: white;
+  border-radius: 15px;
   padding: 20px;
+  max-width: 1200px;
+  width: 100%;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Dashboard Header */
-.dashboard-header {
+h2 {
   text-align: center;
   margin-bottom: 20px;
-  font-size: 2rem;
-  font-weight: bold;
 }
 
-/* Charts Container */
-.charts-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-  padding: 10px;
-}
-
-/* Individual Chart Item */
-.chart-item {
-  background-color: #f9f9f9;
-  border-radius: 15px;
-  padding: 20px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-/* ================== */
-/* Inputs Section     */
-/* ================== */
-.inputs-container {
-  background-color: #f1f5f9;
+.edit-section {
+  background: #f0f6fc;
+  border-radius: 12px;
   padding: 15px;
-  border-radius: 15px;
-  margin-bottom: 25px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
 }
 
-.inputs-container h2 {
-  font-size: 1.2rem;
-  margin: 15px 0 10px;
-  color: #0d47a1;
+.edit-section h3 {
+  margin-bottom: 12px;
+  color: #003366;
 }
 
-/* Input Fields */
-.inputs-container input {
-  width: 70px;              /* smaller width */
-  padding: 5px 8px;         /* smaller padding */
-  margin: 5px;
-  font-size: 0.9rem;
-  border: 1px solid #ccc;
+.edit-points {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: flex-end;
+}
+
+.edit-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #222;
+  padding: 10px;
   border-radius: 8px;
+  color: white;
+  min-width: 100px;
+  position: relative;
+}
+
+.edit-item input[type="text"],
+.edit-item input[type="number"] {
+  background: #333;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  padding: 5px;
+  margin: 3px 0;
   text-align: center;
+}
+
+.remove-btn {
+  background: transparent;
+  border: none;
+  color: #ff4d4d;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.add-btn {
+  background: #007bff;
+  border: none;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
   transition: 0.3s;
 }
 
-.inputs-container input:focus {
-  outline: none;
-  border-color: #2d89ff;
-  box-shadow: 0 0 5px rgba(45, 137, 255, 0.6);
+.add-btn:hover {
+  background: #0056b3;
 }
 
-/* Arrange inputs in row */
-.inputs-container div {
+.charts {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 10px;
+  gap: 20px;
+  justify-content: center;
+}
+
+.chart {
+  flex: 1;
+  min-width: 300px;
+  background: white;
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
