@@ -16,6 +16,4 @@ Tech Stack Used:
 -> CSS
 -> JavaScript
 
-Contibuters:
-Member 1:Tanvi Chauhan
-Menber 2:Indranil Mandal
+
